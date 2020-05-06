@@ -1,0 +1,18 @@
+IDENTIFICATION DIVISION.
+       PROGRAM-ID. GENDER.
+       DATA DIVISION.
+       FILE SECTION.
+       WORKING-STORAGE SECTION.
+       01 CHECKGENDER.
+           02 GENDER PIC X(1).
+           88 MALE VALUE 'M'.
+           88 FEMALE VALUE 'F'.
+       PROCEDURE DIVISION.
+       SET FEMALE TO TRUE.
+       IF MALE 
+           DISPLAY "GENDER : MALE"
+       ELSE 
+           DISPLAY "GENDER : FEMALE"
+       END-IF.
+           
+       END PROGRAM GENDER.
